@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+JP&family=Quicksand:wght@500&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-container" id="top-container">
+        <img src="images/cloud.png" alt="clouds" id="top-cloud">
+        <input type="button" value="" id="btn1">
+        <input type="button" value="" id="btn2">
+        <h3 id="toggle-text">Toggle</h3>
+        <h1 id="name">I'm Amman</h1>
+        <h2 class="bio" id="bio">A programmer</h2>
+        <img src="images/cloud.png" alt="clouds" id="bottom-cloud">
+        <img src="images/mountain.png" alt="mountains" class="mountain">
+        <script>
+          var btn1 = document.getElementById("btn1");
+          var btn2 = document.getElementById("btn2");
+          var name = document.getElementById("name");
+          var bio = document.getElementById("bio");
+          var topContainer = document.getElementById("top-container");
+
+          btn1.addEventListener("click", () => {
+            topContainer.style.backgroundColor = "#3795BD";
+            bio.style.color = "#66BFBF";
+        });
+
+          btn2.addEventListener("click", () => {
+              topContainer.style.backgroundColor = "#131862";
+              bio.style.color = "white";
+          });
+        </script>
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="images/Profile Pic.png" alt="Amman's profile picture" class="profile-img">
+          <h2>Howdy folks!</h2>
+          <div class="intro">
+          <p>
+            I am MohammedAmman Chopadiya is currently pursuing a B.Tech in Information Technology from Silver Oak University, Gota. Currently passionate
+            about programming and software development, and working hard to achieve my goal of becoming a software engineer.
+          </p>
+          <p>
+            In the future, I hopes to work for the software industry, where I can apply my
+            skills and knowledge to develop innovative software solutions that make a positive impact on society.
+          </p>
+        </div>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <div class="skill-row">
+            <img class="C-img" src="images/c-.png" alt="">
+            <h3>Data Structures in C++</h3>
+            <p>
+                <li>Proficiency in C++ syntax and semantics, including knowledge of fundamental data types, control structures, and operators.</li>
+                <li>Experience with object-oriented programming concepts, such as classes, objects, inheritance, and polymorphism.</li>
+            </p>
+          </div>
+          <div class="skill-row">
+            <img class="Web-img" src="images/app-development.png" alt="">
+            <h3>Web Development</h3>
+            <p>
+                <li>
+                    Proficiency in HTML, CSS, and JavaScript, the foundational languages of web development.
+                </li>
+                <li>
+                    Knowledge of database technologies such as MySQL, MongoDB, and PostgreSQL, and the ability to design and implement database schemas.
+                </li>
+            </p>  
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>If you love programming.</h3>
+          <p class="contact-intro">
+            if you love programming as much as I do, get in touch with me.
+          </p>
+          <a class="btn" href="mailto:ammanchopadiya15@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/mohammedamman-chopadiya-23410321b">LinkedIn</a>
+        <a class="footer-link" href="https://www.instagram.com/m_.amman_.c/">Instagram</a>
+        <a class="footer-link" href="#top-container">Top</a>
+        <p class="mark">© 2023 MohammedAmman Chopadiya.</p>
+      </div>
+      
+</body>
+</html>
